@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -37,21 +38,15 @@
     .navbar-toggler {
       border: none;
     }
-
-    /* Estilo para os cards da seção Cursos - fundo cinza claro e texto azul escuro */
+    .foto-perfil {
+      max-width: 200px;
+      border-radius: 50%;
+    }
     .card.cursos-card {
-      background-color: #f8f9fa !important; /* cinza claro */
+      background-color: #f8f9fa !important;
       border: none !important;
-      color: #0b3d91 !important; /* azul escuro */
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-    }
-    .card.cursos-card .btn-outline-primary {
       color: #0b3d91 !important;
-      border-color: #0b3d91 !important;
-    }
-    .card.cursos-card .btn-outline-primary:hover {
-      background-color: #0b3d91 !important;
-      color: white !important;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
     }
   </style>
 </head>
@@ -79,9 +74,7 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="sobre.html" aria-current="page"
-            >Sobre</a
-          >
+          <a class="nav-link active" href="sobre.html" aria-current="page">Sobre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projetos.html">Projetos</a>
@@ -96,6 +89,22 @@
   <main class="container py-5">
     <h1 class="text-center mb-5">Sobre Mim</h1>
 
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="images/foto.jpg" alt="Foto de Rosiane" class="foto-perfil mb-3" />
+        <div class="redes_sociais">
+          <ul class="d-flex justify-content-center">
+            <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <p>Sou formada em Sistemas de Informação e pós-graduada em Gestão de Negócios com especialização em Marketing. Tenho paixão por tecnologia, desenvolvimento web e sempre busco aprimorar minhas habilidades técnicas e interpessoais para entregar soluções eficientes e inovadoras. Com experiência em Laravel, Bootstrap, Docker e outras ferramentas modernas, me dedico a criar projetos que tragam resultados reais.</p>
+      </div>
+    </div>
+
     <section class="mb-5">
       <h2>Formação Acadêmica</h2>
       <ul>
@@ -106,11 +115,7 @@
 
     <section class="mb-5">
       <h2>Experiência</h2>
-      <p>
-        Experiência com desenvolvimento web, criação de sistemas em Laravel, e
-        uso de tecnologias modernas como Docker, Bootstrap, CSS/Sass, entre
-        outras.
-      </p>
+      <p>Experiência com desenvolvimento web, criação de sistemas em Laravel, e uso de tecnologias modernas como Docker, Bootstrap, CSS/Sass, entre outras.</p>
     </section>
 
     <section class="mb-5">
@@ -119,25 +124,19 @@
         <div class="col-md-4">
           <div class="card cursos-card p-3 h-100">
             <h5 class="card-title">Curso de Vendas</h5>
-            <p class="card-text">
-              Aprimorei técnicas e estratégias de vendas para melhorar resultados.
-            </p>
+            <p class="card-text">Aprimorei técnicas e estratégias de vendas para melhorar resultados.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card cursos-card p-3 h-100">
             <h5 class="card-title">Curso de Informática</h5>
-            <p class="card-text">
-              Conhecimentos sólidos em ferramentas básicas e avançadas de informática.
-            </p>
+            <p class="card-text">Conhecimentos sólidos em ferramentas básicas e avançadas de informática.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card cursos-card p-3 h-100">
             <h5 class="card-title">Curso de Pacote Office</h5>
-            <p class="card-text">
-              Domínio do pacote Office para produtividade e organização profissional.
-            </p>
+            <p class="card-text">Domínio do pacote Office para produtividade e organização profissional.</p>
           </div>
         </div>
       </div>
@@ -156,22 +155,12 @@
   </main>
 
   <footer class="bg-dark text-light py-4">
-    <div
-      class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
-    >
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <p class="mb-2 mb-md-0">&copy; 2025 Rosiane Cristina. Todos os direitos reservados.</p>
       <ul class="d-flex list-unstyled justify-content-center gap-3 mb-0">
         <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=5534996619291"
-            ><i class="fa fa-whatsapp"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-        </li>
+        <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
   </footer>
@@ -179,6 +168,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
