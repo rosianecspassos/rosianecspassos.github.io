@@ -10,43 +10,81 @@
     body {
       font-family: Arial, sans-serif;
     }
-    header h1 {
-      font-size: 1.5rem;
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: nowrap;
     }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
     .brand img {
       height: 40px;
     }
+
+    header h1 {
+      font-size: 1.1rem;
+      margin: 0 0 0 10px;
+      white-space: nowrap;
+    }
+
     .menu ul {
       list-style: none;
+      margin: 0;
       padding: 0;
+      display: flex;
+      gap: 15px;
+      white-space: nowrap;
     }
-    .menu li {
-      display: inline;
-      margin: 0 10px;
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #000;
     }
+
     .redes_sociais ul {
       list-style: none;
       padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
     }
-    .redes_sociais li {
-      display: inline-block;
-      margin: 0 10px;
-    }
+
     .card-img-top {
       object-fit: cover;
+    }
+
+    .redes_sociais i {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .redes_sociais a:hover i {
+      color: #007bff;
     }
   </style>
 </head>
 <body class="bg-light">
 
   <!-- Header -->
-  <header class="bg-white border-bottom py-3 px-3 d-flex justify-content-between align-items-center">
-    <div class="brand d-flex align-items-center">
+  <header>
+    <div class="brand">
       <img src="images/logo.svg" alt="Logo">
-      <h1 class="ms-2">Projetos da Rosi</h1>
+      <h1>Projetos da Rosi</h1>
     </div>
     <nav class="menu">
-      <ul class="d-none d-md-block">
+      <ul class="d-none d-md-flex">
         <li><a href="index.html">Home</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="projetos.html">Projetos</a></li>
@@ -79,40 +117,42 @@
           </div>
         </div>
       </div>
-<div class="row">
-  <!-- Formação Acadêmica -->
-  <div class="col-md-6">
-    <h5><i class="fa fa-graduation-cap"></i> Formação acadêmica</h5>
-    <p>Formação: Sistemas de Informação</p>
-    <p>Grau: Graduação</p>
-    <p>Instituição: UNIPAM</p>
-    <p>Formação: Gestão Estratégica de Negócios</p>
-    <p>Grau: Pós-graduação</p>
-    <p>Instituição: UNIPAM</p>
-  </div>
 
-  <!-- Experiência -->
-  <div class="col-md-6">
-    <h5><i class="fa fa-briefcase"></i> Experiência</h5>
-    <ul class="ps-3"> <!-- padding para alinhar lista -->
-      <li>Auxiliar administrativo</li>
-      <li>Criadora de conteúdo</li>
-      <li>Dev web</li>
-    </ul>
-  </div>
-</div>
-
-          <div class="mt-3">
-            <h5><i class="fa fa-flag"></i> Áreas de Interesse</h5>
-            <span class="badge bg-danger">Testes QA</span>
-            <span class="badge bg-success">Desenvolvimento Web</span>
-            <span class="badge bg-warning text-dark">PHP</span>
-            <span class="badge bg-info text-dark">Laravel</span>
-            <span class="badge bg-dark">Administrativo</span>
-            <span class="badge bg-danger">Marketing</span>
+      <!-- Formação + Experiência -->
+      <div class="col-lg-9 col-md-8">
+        <div class="row">
+          <!-- Formação Acadêmica -->
+          <div class="col-md-6">
+            <h5><i class="fa fa-graduation-cap"></i> Formação acadêmica</h5>
+            <p>Formação: Sistemas de Informação</p>
+            <p>Grau: Graduação</p>
+            <p>Instituição: UNIPAM</p>
+            <p>Formação: Gestão Estratégica de Negócios</p>
+            <p>Grau: Pós-graduação</p>
+            <p>Instituição: UNIPAM</p>
           </div>
-          <a href="sobre.html" class="btn btn-outline-primary mt-3">Saiba Mais <i class="fa fa-plus"></i></a>
+
+          <!-- Experiência -->
+          <div class="col-md-6">
+            <h5><i class="fa fa-briefcase"></i> Experiência</h5>
+            <ul class="ps-3">
+              <li>Auxiliar administrativo</li>
+              <li>Criadora de conteúdo</li>
+              <li>Dev web</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="mt-3">
+          <h5><i class="fa fa-flag"></i> Áreas de Interesse</h5>
+          <span class="badge bg-danger">Testes QA</span>
+          <span class="badge bg-success">Desenvolvimento Web</span>
+          <span class="badge bg-warning text-dark">PHP</span>
+          <span class="badge bg-info text-dark">Laravel</span>
+          <span class="badge bg-dark">Administrativo</span>
+          <span class="badge bg-danger">Marketing</span>
+        </div>
+        <a href="sobre.html" class="btn btn-outline-primary mt-3">Saiba Mais <i class="fa fa-plus"></i></a>
       </div>
     </div>
 
