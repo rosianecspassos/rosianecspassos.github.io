@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos da Rosi | Home</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -12,13 +13,8 @@
       font-family: Arial, sans-serif;
     }
 
-    header {
-      border-bottom: 1px solid #ccc;
-    }
-
     .navbar-brand img {
       height: 40px;
-      width: auto;
     }
 
     .redes_sociais ul {
@@ -36,226 +32,186 @@
     }
 
     .redes_sociais a:hover i {
-      color: #007bff;
+      color: #0d6efd;
     }
 
     .card-img-top {
       object-fit: cover;
     }
-
-    .navbar-toggler {
-      border: none;
-    }
   </style>
 </head>
+
 <body class="bg-light">
 
-  <!-- Navbar Responsiva -->
-  <nav class="navbar navbar-expand-md navbar-light bg-white px-3">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.svg" alt="Logo">
-      <span class="ms-2">Projetos da Rosi</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menuMobile">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="images/logo.svg" alt="Logo">
+    <span class="ms-2">Projetos da Rosi</span>
+  </a>
 
-  <!-- Conteúdo Principal -->
-  <main class="container mt-4">
-    <div class="row">
-      <!-- Perfil -->
-      <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
-        <div class="card text-center">
-          <img src="images/rosiane.png" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px;">
-          <div class="card-body">
-            <h5 class="card-title">Rosiane Cristina Souza dos Passos</h5>
-            <span class="badge bg-primary">Especialista</span>
-            <p class="mt-2">
-              <span class="badge bg-danger">Espanhol</span>
-              <span class="badge bg-success">Português</span>
-            </p>
-            <div class="redes_sociais">
-              <ul>
-                <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Formação + Experiência -->
-      <div class="col-lg-9 col-md-8">
-        <div class="row">
-          <!-- Formação Acadêmica -->
-          <div class="col-md-6">
-            <h5><i class="fa fa-graduation-cap"></i> Formação acadêmica</h5>
-            <p>Formação: Sistemas de Informação</p>
-            <p>Grau: Graduação</p>
-            <p>Instituição: UNIPAM</p>
-            <p>Formação: Gestão Estratégica de Negócios</p>
-            <p>Grau: Pós-graduação</p>
-            <p>Instituição: UNIPAM</p>
-          </div>
-
-          <!-- Experiência -->
-          <div class="col-md-6">
-            <h5><i class="fa fa-briefcase"></i> Experiência</h5>
-            <ul class="ps-3">
-              <li>Auxiliar administrativo</li>
-              <li>Marketing digital</li>
-              <li>Dev web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <h5><i class="fa fa-flag"></i> Áreas de Interesse</h5>
-          <span class="badge bg-danger">Testes QA</span>
-          <span class="badge bg-success">Desenvolvimento Web</span>
-          <span class="badge bg-warning text-dark">PHP</span>
-          <span class="badge bg-info text-dark">Laravel</span>
-          <span class="badge bg-dark">Administrativo</span>
-          <span class="badge bg-danger">Marketing Digital</span>
-          <span class="badge bg-warning text-dark">Vistoria veicular</span> 
-        </div>
-        <a href="sobre.html" class="btn btn-outline-primary mt-3">Saiba Mais <i class="fa fa-plus"></i></a>
-      </div>
-    </div>
-
-    <!-- Projetos -->
-    <section class="mt-5">
-      <h4 class="text-center mb-4 border-bottom pb-2">Projetos</h4>
-        <div class="card card-body">
-      <div class="row justify-content-center">     
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-              <img src="images/precificacao_tela_planos.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Precifique Fácil| Precificação de produtos com sistema de pagamentos</h5>
-              <p class="card-text">Sistema em PHP, Laravel, Docker, Bootstrap, etc., que calcula o preço baseado nos custos.</p>
-             <a href="https://github.com/rosianecspassos/precificacao_de_produtos" target="_blank" class="btn btn-primary">Sobre o Projeto</a>
-            </div>
-          </div>
-        </div>
-                <div class="col-md-4 mb-3">
-          <div class="card h-100">
-              <img src="images/Calculo_preco_margem.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Precifique Fácil| Precificação de produtos</h5>
-              <p class="card-text">Sistema em PHP</p>
-             <a href="https://github.com/rosianecspassos/precificacacao_php_puro" target="_blank" class="btn btn-primary">Sobre o Projeto</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-          <img src="images/siteprofissional.png" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Portifólio profissional | Projetos da Rosi">
-            <div class="card-body">
-              <h5 class="card-title">Portfólio profissional | Projetos da Rosi</h5>
-              <p class="card-text">Site com currículo e portfólio usando PHP, Laravel, Docker, etc.</p>
-              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio" target="_blank" class="btn btn-primary">Sobre o projeto</a>
-            </div>
-          </div>
-        </div>
-      </div>
-          <div class="container text-center w-25">
-       <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-Ver mais
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">
+    <span class="navbar-toggler-icon"></span>
   </button>
-          </div> 
-        </div>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-       <div class="row justify-content-center">     
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-              <img src="images/precificacao_tela_planos.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Precifique Fácil| Precificação de produtos com sistema de pagamentos</h5>
-              <p class="card-text">Sistema em PHP, Laravel, Docker, Bootstrap, etc., que calcula o preço baseado nos custos.</p>
-             <a href="https://github.com/rosianecspassos/precificacao_de_produtos" target="_blank" class="btn btn-primary">Sobre o Projeto</a>
-            </div>
-          </div>
-        </div>
-                <div class="col-md-4 mb-3">
-          <div class="card h-100">
-              <img src="images/Calculo_preco_margem.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Precifique Fácil| Precificação de produtos</h5>
-              <p class="card-text">Sistema em PHP</p>
-             <a href="https://github.com/rosianecspassos/precificacacao_php_puro" target="_blank" class="btn btn-primary">Sobre o Projeto</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-          <img src="images/siteprofissional.png" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Portifólio profissional | Projetos da Rosi">
-            <div class="card-body">
-              <h5 class="card-title">Portfólio profissional | Projetos da Rosi</h5>
-              <p class="card-text">Site com currículo e portfólio usando PHP, Laravel, Docker, etc.</p>
-              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio" target="_blank" class="btn btn-primary">Sobre o projeto</a>
-            </div>
-          </div>
-        </div>
-       </div>
-             <div class="container text-center w-25">
-       <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-Ver mais
-  </button>
-          </div> 
+
+  <div class="collapse navbar-collapse" id="menuMobile">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+      <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+    </ul>
   </div>
-</div>
-    </section>
+</nav>
 
-    <!-- Contato -->
-    <section class="mt-5">
-      <h5 class="text-center border-top pt-3">Entre em contato</h5>
-      <form action="mailto:rosianecristinasi2013@gmail.com" method="GET">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo">
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com">
-          </div>
-        </div>
-        <div class="mt-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Digite sua mensagem..."></textarea>
-        </div>
-        <div class="text-center mt-3">
-          <button type="submit" class="btn btn-dark">Enviar</button>
-        </div>
-      </form>
-    </section>
-  </main>
+<!-- CONTEÚDO -->
+<main class="container mt-4">
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light mt-5 py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <p>&copy; 2025 Rosiane Cristina. Todos os direitos reservados.</p>
-      <ul class="d-flex list-unstyled justify-content-center gap-3">
-        <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
+<!-- PROJETOS -->
+<section class="mt-5">
+  <h4 class="text-center mb-4 border-bottom pb-2">Projetos</h4>
+
+  <div class="row">
+
+    <!-- PROJETO 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/precificacao_tela_planos.png" class="card-img-top" alt="Precifique Fácil">
+
+        <div class="card-body">
+          <h5 class="card-title">Precifique Fácil | Pagamentos</h5>
+          <p class="card-text">
+            Sistema de precificação com cálculo de custos e planos.
+          </p>
+
+          <a class="btn btn-primary mb-2"
+             data-bs-toggle="collapse"
+             href="#projeto1"
+             role="button"
+             aria-expanded="false"
+             aria-controls="projeto1">
+            Sobre
+          </a>
+
+          <div class="collapse" id="projeto1">
+            <div class="card card-body">
+              <p>
+                Desenvolvido em PHP, Laravel, Docker e Bootstrap.
+                Permite calcular preços com base em custos e margens.
+              </p>
+
+              <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
+                 target="_blank"
+                 class="btn btn-outline-primary btn-sm">
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- PROJETO 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/Calculo_preco_margem.png" class="card-img-top" alt="Precificação PHP">
+
+        <div class="card-body">
+          <h5 class="card-title">Precifique Fácil | PHP Puro</h5>
+          <p class="card-text">
+            Sistema simples de precificação em PHP.
+          </p>
+
+          <a class="btn btn-primary mb-2"
+             data-bs-toggle="collapse"
+             href="#projeto2"
+             role="button"
+             aria-expanded="false"
+             aria-controls="projeto2">
+            Sobre
+          </a>
+
+          <div class="collapse" id="projeto2">
+            <div class="card card-body">
+              <p>
+                Projeto focado em cálculo de margem e lucro
+                utilizando PHP puro.
+              </p>
+
+              <a href="https://github.com/rosianecspassos/precificacacao_php_puro"
+                 target="_blank"
+                 class="btn btn-outline-primary btn-sm">
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJETO 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/siteprofissional.png"
+             class="card-img-top"
+             style="height:150px"
+             alt="Portfólio">
+
+        <div class="card-body">
+          <h5 class="card-title">Portfólio Profissional</h5>
+          <p class="card-text">
+            Site com currículo e projetos profissionais.
+          </p>
+
+          <a class="btn btn-primary mb-2"
+             data-bs-toggle="collapse"
+             href="#projeto3"
+             role="button"
+             aria-expanded="false"
+             aria-controls="projeto3">
+            Sobre
+          </a>
+
+          <div class="collapse" id="projeto3">
+            <div class="card card-body">
+              <p>
+                Portfólio desenvolvido com PHP, Laravel e Docker,
+                apresentando projetos e experiências.
+              </p>
+
+              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio"
+                 target="_blank"
+                 class="btn btn-outline-primary btn-sm">
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light mt-5 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <p>&copy; 2025 Rosiane Cristina. Todos os direitos reservados.</p>
+
+    <ul class="d-flex list-unstyled gap-3">
+      <li><a href="https://github.com/rosianecspassos" class="text-light"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=5534996619291" class="text-light"><i class="fa fa-whatsapp"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/" class="text-light"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
