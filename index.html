@@ -48,11 +48,10 @@
   </div>
 </nav>
 
-<!-- CONTEÚDO -->
 <main class="container mt-4">
 
+<!-- PERFIL -->
 <div class="row">
-  <!-- PERFIL -->
   <div class="col-lg-3 col-md-4 mb-4">
     <div class="card text-center">
       <img src="images/rosiane.png" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px;height:120px;">
@@ -76,7 +75,6 @@
     </div>
   </div>
 
-  <!-- FORMAÇÃO / EXPERIÊNCIA -->
   <div class="col-lg-9 col-md-8">
     <div class="row">
       <div class="col-md-6">
@@ -90,7 +88,7 @@
         <ul>
           <li>Auxiliar administrativo</li>
           <li>Marketing digital</li>
-          <li>Desenvolvimento web</li>
+          <li>Dev web</li>
         </ul>
       </div>
     </div>
@@ -117,71 +115,68 @@
   <h4 class="text-center mb-4 border-bottom pb-2">Projetos</h4>
 
   <div class="row">
-
-    <!-- PROJETO 1 -->
-    <div class="col-md-4 mb-4">
+    <!-- CARD 1 -->
+    <div class="col-md-4 mb-3">
       <div class="card h-100">
         <img src="images/precificacao_tela_planos.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Precifique Fácil | Pagamentos</h5>
           <p class="card-text">Sistema em PHP, Laravel e Docker.</p>
-
-          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p1">Sobre</a>
-          <div class="collapse" id="p1">
-            <div class="card card-body">
-              Sistema de cálculo de preços baseado em custos e margem.
-              <a href="https://github.com/rosianecspassos/precificacao_de_produtos" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
-                GitHub
-              </a>
-            </div>
-          </div>
+          <a href="https://github.com/rosianecspassos/precificacao_de_produtos" target="_blank" class="btn btn-primary">
+            Sobre o Projeto
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- PROJETO 2 -->
-    <div class="col-md-4 mb-4">
+    <!-- CARD 2 -->
+    <div class="col-md-4 mb-3">
       <div class="card h-100">
         <img src="images/Calculo_preco_margem.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Precifique Fácil | PHP Puro</h5>
-          <p class="card-text">Sistema simples de precificação.</p>
-
-          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p2">Sobre</a>
-          <div class="collapse" id="p2">
-            <div class="card card-body">
-              Projeto focado em cálculo de lucro.
-              <a href="https://github.com/rosianecspassos/precificacacao_php_puro" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
-                GitHub
-              </a>
-            </div>
-          </div>
+          <p class="card-text">Sistema em PHP.</p>
+          <a href="https://github.com/rosianecspassos/precificacacao_php_puro" target="_blank" class="btn btn-primary">
+            Sobre o Projeto
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- PROJETO 3 -->
-    <div class="col-md-4 mb-4">
+    <!-- CARD 3 -->
+    <div class="col-md-4 mb-3">
       <div class="card h-100">
         <img src="images/siteprofissional.png" class="card-img-top" style="height:150px;">
         <div class="card-body">
           <h5 class="card-title">Portfólio Profissional</h5>
-          <p class="card-text">Site com currículo e projetos.</p>
-
-          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p3">Sobre</a>
-          <div class="collapse" id="p3">
-            <div class="card card-body">
-              Portfólio desenvolvido em Laravel.
-              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
-                GitHub
-              </a>
-            </div>
-          </div>
+          <p class="card-text">Site com currículo e portfólio.</p>
+          <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio" target="_blank" class="btn btn-primary">
+            Sobre o Projeto
+          </a>
         </div>
       </div>
     </div>
-
   </div>
+
+  <!-- BOTÃO GLOBAL (RESTAURADO) -->
+  <div class="text-center my-4">
+    <button class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample">
+      Ver mais
+    </button>
+  </div>
+
+  <!-- COLLAPSE GLOBAL (RESTAURADO) -->
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <p>Aqui você pode adicionar mais projetos futuramente.</p>
+    </div>
+  </div>
+
 </section>
 
 <!-- CONTATO -->
@@ -197,7 +192,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-dark text-light mt-5 py-4 text-center">
   © 2025 Rosiane Cristina – Todos os direitos reservados
 </footer>
@@ -205,6 +199,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
