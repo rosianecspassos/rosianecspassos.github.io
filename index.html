@@ -9,14 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .navbar-brand img {
-      height: 40px;
-    }
-
+    body { font-family: Arial, sans-serif; }
+    .navbar-brand img { height: 40px; }
+    .card-img-top { object-fit: cover; }
     .redes_sociais ul {
       list-style: none;
       padding: 0;
@@ -25,19 +20,8 @@
       justify-content: center;
       gap: 10px;
     }
-
-    .redes_sociais i {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    .redes_sociais a:hover i {
-      color: #0d6efd;
-    }
-
-    .card-img-top {
-      object-fit: cover;
-    }
+    .redes_sociais i { font-size: 1.2rem; color: #333; }
+    .redes_sociais a:hover i { color: #0d6efd; }
   </style>
 </head>
 
@@ -67,6 +51,67 @@
 <!-- CONTEÚDO -->
 <main class="container mt-4">
 
+<div class="row">
+  <!-- PERFIL -->
+  <div class="col-lg-3 col-md-4 mb-4">
+    <div class="card text-center">
+      <img src="images/rosiane.png" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px;height:120px;">
+      <div class="card-body">
+        <h5 class="card-title">Rosiane Cristina Souza dos Passos</h5>
+        <span class="badge bg-primary">Especialista</span>
+
+        <p class="mt-2">
+          <span class="badge bg-danger">Espanhol</span>
+          <span class="badge bg-success">Português</span>
+        </p>
+
+        <div class="redes_sociais">
+          <ul>
+            <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMAÇÃO / EXPERIÊNCIA -->
+  <div class="col-lg-9 col-md-8">
+    <div class="row">
+      <div class="col-md-6">
+        <h5><i class="fa fa-graduation-cap"></i> Formação acadêmica</h5>
+        <p>Sistemas de Informação – Graduação – UNIPAM</p>
+        <p>Gestão Estratégica de Negócios – Pós-graduação – UNIPAM</p>
+      </div>
+
+      <div class="col-md-6">
+        <h5><i class="fa fa-briefcase"></i> Experiência</h5>
+        <ul>
+          <li>Auxiliar administrativo</li>
+          <li>Marketing digital</li>
+          <li>Desenvolvimento web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <h5><i class="fa fa-flag"></i> Áreas de Interesse</h5>
+      <span class="badge bg-danger">Testes QA</span>
+      <span class="badge bg-success">Desenvolvimento Web</span>
+      <span class="badge bg-warning text-dark">PHP</span>
+      <span class="badge bg-info text-dark">Laravel</span>
+      <span class="badge bg-dark">Administrativo</span>
+      <span class="badge bg-danger">Marketing Digital</span>
+      <span class="badge bg-warning text-dark">Vistoria veicular</span>
+    </div>
+
+    <a href="sobre.html" class="btn btn-outline-primary mt-3">
+      Saiba Mais <i class="fa fa-plus"></i>
+    </a>
+  </div>
+</div>
+
 <!-- PROJETOS -->
 <section class="mt-5">
   <h4 class="text-center mb-4 border-bottom pb-2">Projetos</h4>
@@ -76,38 +121,20 @@
     <!-- PROJETO 1 -->
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="images/precificacao_tela_planos.png" class="card-img-top" alt="Precifique Fácil">
-
+        <img src="images/precificacao_tela_planos.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Precifique Fácil | Pagamentos</h5>
-          <p class="card-text">
-            Sistema de precificação com cálculo de custos e planos.
-          </p>
+          <p class="card-text">Sistema em PHP, Laravel e Docker.</p>
 
-          <a class="btn btn-primary mb-2"
-             data-bs-toggle="collapse"
-             href="#projeto1"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto1">
-            Sobre
-          </a>
-
-          <div class="collapse" id="projeto1">
+          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p1">Sobre</a>
+          <div class="collapse" id="p1">
             <div class="card card-body">
-              <p>
-                Desenvolvido em PHP, Laravel, Docker e Bootstrap.
-                Permite calcular preços com base em custos e margens.
-              </p>
-
-              <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
-                 target="_blank"
-                 class="btn btn-outline-primary btn-sm">
-                Ver no GitHub
+              Sistema de cálculo de preços baseado em custos e margem.
+              <a href="https://github.com/rosianecspassos/precificacao_de_produtos" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                GitHub
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -115,38 +142,20 @@
     <!-- PROJETO 2 -->
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="images/Calculo_preco_margem.png" class="card-img-top" alt="Precificação PHP">
-
+        <img src="images/Calculo_preco_margem.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Precifique Fácil | PHP Puro</h5>
-          <p class="card-text">
-            Sistema simples de precificação em PHP.
-          </p>
+          <p class="card-text">Sistema simples de precificação.</p>
 
-          <a class="btn btn-primary mb-2"
-             data-bs-toggle="collapse"
-             href="#projeto2"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto2">
-            Sobre
-          </a>
-
-          <div class="collapse" id="projeto2">
+          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p2">Sobre</a>
+          <div class="collapse" id="p2">
             <div class="card card-body">
-              <p>
-                Projeto focado em cálculo de margem e lucro
-                utilizando PHP puro.
-              </p>
-
-              <a href="https://github.com/rosianecspassos/precificacacao_php_puro"
-                 target="_blank"
-                 class="btn btn-outline-primary btn-sm">
-                Ver no GitHub
+              Projeto focado em cálculo de lucro.
+              <a href="https://github.com/rosianecspassos/precificacacao_php_puro" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                GitHub
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -154,41 +163,20 @@
     <!-- PROJETO 3 -->
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="images/siteprofissional.png"
-             class="card-img-top"
-             style="height:150px"
-             alt="Portfólio">
-
+        <img src="images/siteprofissional.png" class="card-img-top" style="height:150px;">
         <div class="card-body">
           <h5 class="card-title">Portfólio Profissional</h5>
-          <p class="card-text">
-            Site com currículo e projetos profissionais.
-          </p>
+          <p class="card-text">Site com currículo e projetos.</p>
 
-          <a class="btn btn-primary mb-2"
-             data-bs-toggle="collapse"
-             href="#projeto3"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto3">
-            Sobre
-          </a>
-
-          <div class="collapse" id="projeto3">
+          <a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#p3">Sobre</a>
+          <div class="collapse" id="p3">
             <div class="card card-body">
-              <p>
-                Portfólio desenvolvido com PHP, Laravel e Docker,
-                apresentando projetos e experiências.
-              </p>
-
-              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio"
-                 target="_blank"
-                 class="btn btn-outline-primary btn-sm">
-                Ver no GitHub
+              Portfólio desenvolvido em Laravel.
+              <a href="https://github.com/rosianecspassos/projetos_da_rosy_portifolio" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                GitHub
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -196,23 +184,27 @@
   </div>
 </section>
 
+<!-- CONTATO -->
+<section class="mt-5">
+  <h5 class="text-center border-top pt-3">Entre em contato</h5>
+  <form action="mailto:rosianecristinasi2013@gmail.com" method="GET">
+    <input type="text" class="form-control mb-2" placeholder="Nome">
+    <input type="email" class="form-control mb-2" placeholder="Email">
+    <textarea class="form-control mb-2" placeholder="Mensagem"></textarea>
+    <button class="btn btn-dark w-100">Enviar</button>
+  </form>
+</section>
+
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-light mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <p>&copy; 2025 Rosiane Cristina. Todos os direitos reservados.</p>
-
-    <ul class="d-flex list-unstyled gap-3">
-      <li><a href="https://github.com/rosianecspassos" class="text-light"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5534996619291" class="text-light"><i class="fa fa-whatsapp"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/" class="text-light"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-  </div>
+<footer class="bg-dark text-light mt-5 py-4 text-center">
+  © 2025 Rosiane Cristina – Todos os direitos reservados
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
