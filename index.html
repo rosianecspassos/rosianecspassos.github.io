@@ -10,6 +10,7 @@
 
   <style>
     body { font-family: Arial, sans-serif; }
+    .navbar-brand img { height: 40px; }
     .card-img-top { object-fit: cover; }
     .redes_sociais ul {
       list-style: none;
@@ -26,9 +27,79 @@
 
 <body class="bg-light">
 
-<main class="container mt-5">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="images/logo.svg" alt="Logo">
+    <span class="ms-2">Projetos da Rosi</span>
+  </a>
 
-<section class="projects">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="menuMobile">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container mt-4">
+
+<div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+
+<!-- PERFIL -->
+<div class="row">
+  <div class="col-lg-3 col-md-4 mb-4">
+    <div class="card text-center">
+      <img src="images/rosiane.png" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px;height:120px;">
+      <div class="card-body">
+        <h5 class="card-title">Rosiane Cristina Souza dos Passos</h5>
+        <span class="badge bg-primary">Especialista</span>
+
+        <p class="mt-2">
+          <span class="badge bg-danger">Espanhol</span>
+          <span class="badge bg-success">Português</span>
+        </p>
+
+        <div class="redes_sociais">
+          <ul>
+            <li><a href="https://github.com/rosianecspassos"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5534996619291"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rosiane-cristina-souza-dos-passos-38390645/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-9 col-md-8">
+    <div class="row">
+      <div class="col-md-6">
+        <h5><i class="fa fa-graduation-cap"></i> Formação acadêmica</h5>
+        <p>Sistemas de Informação – UNIPAM</p>
+        <p>Gestão Estratégica de Negócios – UNIPAM</p>
+      </div>
+
+      <div class="col-md-6">
+        <h5><i class="fa fa-briefcase"></i> Experiência</h5>
+        <ul>
+          <li>PHP / Laravel</li>
+          <li>Auxiliar administrativo</li>
+          <li>Marketing digital</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJETOS -->
+<section id="projects" class="mt-5">
   <h4 class="text-center mb-4">Projetos</h4>
 
   <div class="row">
@@ -42,23 +113,22 @@
 
           <a class="btn btn-primary mb-2"
              data-bs-toggle="collapse"
-             href="#projeto1"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto1">
+             href="#proj1">
             Ver detalhes
           </a>
 
-          <div class="collapse mt-3" id="projeto1">
-            <p class="card-text">
-              Sistema desenvolvido em PHP, Laravel e Docker, com integração de pagamentos.
-            </p>
+          <div class="collapse mt-3" id="proj1">
+            <p>Sistema em PHP, Laravel e Docker.</p>
 
-            <div class="d-grid gap-2">
-              <a href="#" class="btn btn-outline-primary" target="_blank">Abrir</a>
-              <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
-                 class="btn btn-outline-dark"
-                 target="_blank">GitHub</a>
+            <div class="row g-2">
+              <div class="col">
+                <a href="#" class="btn btn-outline-primary w-100">Projeto</a>
+              </div>
+              <div class="col">
+                <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
+                   class="btn btn-outline-dark w-100"
+                   target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -75,23 +145,23 @@
 
           <a class="btn btn-primary mb-2"
              data-bs-toggle="collapse"
-             href="#projeto2"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto2">
+             href="#proj2">
             Ver detalhes
           </a>
 
-          <div class="collapse mt-3" id="projeto2">
-            <p class="card-text">
-              Sistema simples de precificação desenvolvido em PHP puro.
-            </p>
+          <div class="collapse mt-3" id="proj2">
+            <p>Sistema em PHP puro.</p>
 
-            <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
-               class="btn btn-outline-dark"
-               target="_blank">
-              GitHub
-            </a>
+            <div class="row g-2">
+              <div class="col">
+                <a href="#" class="btn btn-outline-primary w-100">Projeto</a>
+              </div>
+              <div class="col">
+                <a href="https://github.com/rosianecspassos/precificacao_de_produtos"
+                   class="btn btn-outline-dark w-100"
+                   target="_blank">GitHub</a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -107,23 +177,23 @@
 
           <a class="btn btn-primary mb-2"
              data-bs-toggle="collapse"
-             href="#projeto3"
-             role="button"
-             aria-expanded="false"
-             aria-controls="projeto3">
+             href="#proj3">
             Ver detalhes
           </a>
 
-          <div class="collapse mt-3" id="projeto3">
-            <p class="card-text">
-              Site pessoal com currículo, projetos e informações profissionais.
-            </p>
+          <div class="collapse mt-3" id="proj3">
+            <p>Site com currículo e portfólio.</p>
 
-            <a href="https://github.com/rosianecspassos"
-               class="btn btn-outline-dark"
-               target="_blank">
-              GitHub
-            </a>
+            <div class="row g-2">
+              <div class="col">
+                <a href="#" class="btn btn-outline-primary w-100">Projeto</a>
+              </div>
+              <div class="col">
+                <a href="https://github.com/rosianecspassos"
+                   class="btn btn-outline-dark w-100"
+                   target="_blank">GitHub</a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -133,6 +203,20 @@
   </div>
 </section>
 
+<!-- CONTATO -->
+<section id="contact" class="mt-5">
+  <h5 class="text-center">Entre em contato</h5>
+  <form>
+    <input type="text" class="form-control mb-2" placeholder="Nome">
+    <input type="email" class="form-control mb-2" placeholder="Email">
+    <textarea class="form-control mb-2" placeholder="Mensagem"></textarea>
+    <div class="text-center">
+      <button class="btn btn-dark">Enviar</button>
+    </div>
+  </form>
+</section>
+
+</div>
 </main>
 
 <footer class="bg-dark text-light mt-5 py-4 text-center">
